@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>block-layout-practise</title>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    .header {
+      background-color: black;
+    }
+
+    .header p {
+      color: white;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .text {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .product {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .product > ul {
+      padding: 0;
+    }
+
+    .product > ul > li {
+      width: 180px;
+      height: 34px;
+      border: 3px solid;
+      line-height: 34px;
+      background-color: pink;
+      margin-top: 15px;
+    }
+
+    .product > ul > li:hover {
+      background-color: red;
+    }
+
+    .product > ul > li:nth-child(n+5) {
+      margin-left: 210px;
+
+    }
+
+    .product > ul > li:nth-child(5) {
+      margin-top: -205px;
+    }
+
+    .product > ul > li:nth-child(n+9) {
+      margin-left: 420px;
+    }
+
+    .product > ul > li:nth-child(9) {
+      margin-top: -205px;
+    }
+
+    .list {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .list > ul {
+      padding: 0;
+      overflow: hidden;
+    } 
+
+    .list > ul > li {
+      border-bottom: 1px dotted;
+      margin: -1px; 
+    }
+
+    .fooder {
+      background-color: violet;
+    }
+    
+    .fooder p {
+      text-align: center;
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <p>hello world 请调整浏览器窗口大小查看效果</p>
+  </div>
+    <div class="text">
+      页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+    </div>
+    <div class="product">
+      <ul>
+        <li>宽180高40(包含边框)</li>
+        <li>水平间隙30px</li>
+        <li>垂直间隙15px</li>
+        <li>边框宽度3px</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+      </ul>
+    </div>
+
+    <div class="list">
+      <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </div>
+ 
+
+  <div class="fooder">
+    <p>&copy版权所有 </p>
+    <p>本页所有布局均使用块元素</p>
+  </div>
+
+</body>
+</html>
