@@ -21,6 +21,8 @@
     .text {
       width: 600px;
       margin: 0 auto;
+      margin-top: 1em;
+
     }
 
     .product {
@@ -32,6 +34,11 @@
       padding: 0;
     }
 
+/*
+    .product > ul {
+      margin-left: -40px;
+    }
+*/
     .product > ul > li {
       width: 180px;
       height: 34px;
@@ -39,15 +46,27 @@
       line-height: 34px;
       background-color: pink;
       margin-top: 15px;
+      box-sizing: border-box;
     }
 
     .product > ul > li:hover {
       background-color: red;
     }
 
-    .product > ul > li:nth-child(n+5) {
-      margin-left: 210px;
+    .product > ul > li {
+      display: inline-block;
+      margin-right: 30px;
 
+    }
+
+    .product > ul > li:nth-child(3n) {
+      margin-right: 0px;
+    }
+
+
+
+    /*.product > ul > li:nth-child(n+5) {
+      margin-left: 210px;
     }
 
     .product > ul > li:nth-child(5) {
@@ -60,7 +79,7 @@
 
     .product > ul > li:nth-child(9) {
       margin-top: -205px;
-    }
+    }*/
 
     .list {
       width: 600px;
@@ -97,18 +116,18 @@
     </div>
     <div class="product">
       <ul>
-        <li>宽180高40(包含边框)</li>
-        <li>水平间隙30px</li>
-        <li>垂直间隙15px</li>
-        <li>边框宽度3px</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
-        <li>产品</li>
+        <li>宽180高40(包含边框)</li><!--
+    --><li>水平间隙30px</li><!--
+    --><li>垂直间隙15px</li><!--
+    --><li>边框宽度3px</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li><!--
+    --><li>产品</li>
       </ul>
     </div>
 
