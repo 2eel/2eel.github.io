@@ -4,16 +4,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>qq-mail</title>
-  <style>
+  <style> 
+    html,body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    * {
+      background-color: rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-size: 0;
+    }
+
+    body * {
+      font-size: 16px;
+    }
+    
+    header,aside,main {
+      display: inline-block;
+    }
+
+    header {
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid;
+      box-sizing: border-box;
+    }
+
+    aside {
+      width: 200px;
+      height: calc(100vh - 100px);
+      border-right: 1px solid;
+      box-sizing: border-box;
+      vertical-align: top;
+    }
+
+    main {
+      width: calc(100% - 200px);
+      height: calc(100vh - 100px);
+      vertical-align: top;
+      margin: 0;
+      padding: 0;
+    }
+
+  /*  
     html,body {
       height: 100%;
       margin: 0;
     }
-    
+
     * {
       background-color: rgba(0,0,0,0.1);
     }
-    
+
     header {
       height: 100px;
       box-sizing: border-box;
@@ -31,15 +78,12 @@
       margin-left: 220px;
       height: calc(100% - 100px);
       margin-top: calc(-100vh + 100px);
-    }
-
+    }*/
   </style>
 </head>
 <body>
   <header>header</header>
-
-    <aside>aside</aside>
-    <main>main</main>
-
+  <aside>aside</aside>
+  <main>main</main>
 </body>
 </html>
