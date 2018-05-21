@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>input-beauty</title>
+  <style>
+    * {
+      background-color: rgba(0,0,0,0.1);
+    }
+
+    input {
+      vertical-align: -.05em;
+    }
+
+    #gan {
+      display: none;
+    }
+
+    input + label {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      border: 2px solid;
+      line-height: 15px;
+      text-align: center;
+      text-indent: -999px;
+    } 
+
+    input:checked + label {
+      text-indent: 0px;
+    }
+
+    #font {
+      font-family: inherit;
+      font-size: inherit;
+      border-radius: 2px;
+      margin: -5px auto;
+      border: 1px solid;
+      padding: 5px;
+    }
+
+    p {
+      line-height: 4;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <p>Lorem ipsum dolor <input type="checkbox" name="" id="checkbox">sit amet, consectetur adipisicing 
+  </p>
+
+  <p>Lorem ipsum dolor <input type="checkbox" name="" id="gan"><label for="gan">√</label> sit amet, consectetur adipisicing 
+  </p>
+
+  <p>Lorem ipsum dolor <input type="text" name="" id="font"> sit amet, consectetur adipisicing 
+  </p>
+
+
+</body>
+</html>
