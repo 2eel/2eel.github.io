@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ios-checkedbox</title>
+  <style>
+    /** {
+      background-color: rgba(0,0,0,0.1);
+    }*/
+
+    #twitter {
+      display: none;
+
+    }
+
+    #twitter + label {
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+      background-image: url(https://abs.twimg.com/a/1526339738/img/animations/web_heart_animation_edge.png);
+      cursor: pointer;
+      vertical-align: bottom;
+    }
+
+    input:checked + label {
+      background-position: -2800px 0;
+      /*transition-property: width;*/
+      transition: 1s steps(28);
+    }
+
+    #ios {
+      display: none;
+    }
+
+    #ios[type="checkbox"] + label {
+      width: 100px;
+      height: 60px;
+      background-color: #ddd;
+      border-radius: 999px;
+      display: inline-block;
+      padding: 3px;
+      box-shadow: 0 0 0 0px inset;
+      transition: box-shadow .2s
+    }
+
+    #ios[type="checkbox"] + label::before {
+      content: "";
+      height: 60px;
+      width: 60px;
+      border-radius: 999px;
+      display: inline-block;
+      background-color: red;
+      transition: .3s;
+      background-color: white;
+      box-shadow: 0 3px 3px #6669;
+      cursor: pointer;
+    }
+
+    #ios[type="checkbox"]:checked + label {
+      /*background-color: #6edc5f;*/
+      box-shadow: 0 0 0 38px #6edc5f inset;
+      transition: .3s;
+    }
+
+    #ios[type="checkbox"]:checked + label::before {
+      margin-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="checkbox" id="twitter">
+    <label for="twitter"></label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="ios">
+    <label for="ios"></label>
+  </div>  
+</body>
+</html>
