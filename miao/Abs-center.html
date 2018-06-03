@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+    * {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* 至少有一个元素大小不确定 */
+
+/* 里面比外面小 */
+
+.s1 {
+  line-height: 200px;/* line-hight继承 */
+  text-align: center;
+  font-size: 0;
+} 
+
+.s1 div {
+  font-size: 16px;
+  text-align: left;
+  line-height: normal;
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.s2 {
+  display: table-cell;
+  width: 200px;
+  height: 150px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.s2 div {
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  margin: auto;
+  height: 100px;
+
+}
+
+
+.s3 {
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+
+.s3 div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  top: 50%;
+  left: 50%;
+}
+
+.s4 {
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+
+.s4 div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+
+  </style>
+</head>
+<body>
+  <section class="s1">qewfqe
+    <div>foo</div>
+  </section>
+  
+  <hr>
+  <section class="s2">
+    <div>foo</div>
+  </section>
+  
+  <hr>
+  <section class="s3">
+    <div>foo</div>
+  </section>
+  
+  <hr>
+  <section class="s4">
+    <div>foo</div>
+  </section>
+</body>
+</html>
