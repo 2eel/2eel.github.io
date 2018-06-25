@@ -1,0 +1,144 @@
+<script id="ch0105/01">
+  var age
+  var ageAdd = 0
+  for (var i = 0; i < 100; i++) {
+    age = parseInt(Number(prompt("第" + (i+1) +"个学生年龄")))
+    if (age >= 15 && age <= 25) {
+      ageAdd = age + ageAdd
+    } else {
+      i--
+    }
+  }
+  console.log("平均年龄为" + (ageAdd / i))
+</script>
+
+<script id="ch0105/02">
+  var money
+  var surplus = 0
+  for (var i = 0; i < 12; i++) {
+    money = Number(prompt('第' + (i+1) + "个月结余"))
+    if (money <= 1000000) {
+      surplus = money + surplus
+    } else {
+      i--
+    }
+  }
+  console.log("总结余" + surplus)
+</script>
+
+<script id="ch0105/03">
+  var count
+  var add = 0
+  for (var i = 0; i < 100; i++) {
+    count = Number(prompt('输入第' + (i+1) + "个数"))
+    if (count < 1000) {
+    add = count + add
+    } else {
+      i--
+    } 
+  }
+  console.log("平均数为" + parseInt(add / i))
+</script>
+
+<script id="ch0105/04">
+  var count
+  var add = 0
+  for (var i = 0; i < 10000; i++) {
+    count = Number(prompt('输入第' + (i+1) + "个数"))
+    if (count < 10000) {
+    add = count + add
+    } else {
+      i--
+    } 
+  }
+  console.log("和为" + parseInt(add))
+  console.log("平均数为" + parseInt(add / i))
+</script>
+
+<script id="ch0105/05">
+  debugger
+  var count
+  var max = 0
+  for (var i = 0; i < 100; i++) {
+    count = Number(prompt('输入第' + (i+1) + "个成绩"))
+    if (count > 0 && count < 100) {
+      if (count > max) {
+        max = count
+      }
+    } else {
+      i--
+    } 
+  }
+  console.log("最高成绩" + max)
+</script>
+
+<script id="ch0105/06">
+  var min
+  var max = 0
+  for (var i = 0; i < 1000; i++) {
+    min = Number(prompt('输入第' + (i+1) + "个成绩"))
+    if (min > 0 && min < 100) {
+      if (min < max ) {
+        min = max
+      } else {
+        max = min
+      }
+    } else {
+      i--
+    } 
+  }
+  console.log("最大跨度" + (max - min))
+</script>
+
+<script id="ch0105/07">
+  debugger
+  var medal
+  var gol
+  var sil
+  var cop
+  var gol
+  for (var i =0; i < 17; i++) {
+    gol = Number(prompt('输入第' + (i+1) + "天的金牌数"))
+    sil = Number(prompt('输入第' + (i+1) + "天的银牌数"))
+    cop = Number(prompt('输入第' + (i+1) + "天的铜牌数"))
+    medal = gol + sil + cop
+    console.log("A总国奖牌数：" + medal + "金牌：" + gol + "银牌：" + sil + "铜牌：" + cop)
+  }
+</script>
+
+<script id="ch0105/08">
+  debugger
+  var num = Number(prompt("这是几边形"))
+  var ang = (num - 2) * 180//所有角度之和
+  var unk//未知角度大小
+  for (var i = 0; i < (num - 1); i++) { 
+    unk = Number(prompt("角" + (i+1)))
+    if (unk <= ang) {
+    unk = ang - unk
+    } else {
+      i--
+    }
+  }
+  console.log(num + "边形未知内角度数" + (ang - unk))
+</script>
+
+<script id="ch0105/09">
+  debugger  
+  var m = Number(prompt("小一点的数"))
+  var n = Number(prompt("大一点的数"))
+  if (m < n) {
+    var m1 = m % 2 
+    if (m1 == 0) {
+      m = m + 1
+      for (var i = 0; i < n; i = i + 2) {
+        
+        var add = m + 2
+      }
+    } else if (m1 == 1){
+      for (var i = m; i < n; i = i + 2) {
+        var add = m + i
+      }
+    }
+  }
+  console.log("奇数求和" + add)
+</script>
